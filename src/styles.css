@@ -1,0 +1,213 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* ul{
+overflow:hidden;
+} */
+.header li{
+display:inline;
+padding:0px 28px;
+}
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+.flightlogo{
+    height:20px;
+    padding:0px 1px;
+}
+.img li{
+    padding:0px 10px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)!important;
+}
+.br11{
+    border-radius: 11px;
+}
+
+/* for radiobuttons */
+.radiolabel {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radiolabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 15px;
+    left: 23px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radiolabel:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .radiolabel input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radiolabel input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radiolabel .checkmark:after {
+      top: 6px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  /* end of radio buttons */
+
+  .trip{
+    display: -webkit-flex;
+    display: flex;
+  }
+  .trip div{
+    padding: 8px 15px
+  }
+  .onerow{
+    display: inline-block
+  }
+  .foot{
+    overflow: hidden;
+    /* background-color: #333; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.foot li{
+    display:inline;
+    padding:0px 9px;
+}
+.arrow_logo{
+  transform: rotate(90deg);
+  height: 16px;
+  margin-top: 8px;
+}
+.onerow .mobileview{
+  width:13%!important;
+  padding:0px 1px;
+  /* width:16%; */
+}
+.onerow .lastview{
+  width:20%!important;
+}
+.onerow label{
+  margin-left: 8px;
+  margin-right: 15px;
+}
+@media only screen and (max-width: 320px) {
+  .onerow .mobileview{
+      width:45%!important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .onerow .mobileview{
+      width:45%!important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .onerow .mobileview{
+      width:38%!important;
+  }
+}
+@media only screen and (min-width: 375px) {
+    .foot li{
+        display:inline;
+        padding:0px 15px;
+    }
+    /* .onerow .mobileview{
+        width:40%!important;
+    } */
+  }
+@media only screen and (min-width: 425px) {
+    .foot li{
+        display:inline;
+        padding:0px 21px;
+    }
+}
+@media only screen and (min-width:768px){
+    .foot{
+    display:none;
+   }
+}
+.ml-10{
+  margin-left: 15px;
+}
+
+label {
+  /* margin:20px 0; */
+  position:relative;
+  /* display:inline-block; */
+}
+  
+.onerow span {
+  padding:10px;
+  pointer-events: none;
+  position:absolute;
+  left:0;
+  top:0;
+  transition: 0.2s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity:0.5;
+}
+/* span .checkmark{
+  margin-top: 19%!important;
+  margin-left: 36%!important;
+} */
+/* input {
+  padding:10px;
+} */
+
+input:focus + span, input:not(:placeholder-shown) + span {
+  opacity:1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+
+/* For IE Browsers*/
+input:focus + span, input:not(:-ms-input-placeholder) + span {
+  opacity:1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+.rm-b{
+  border: 0px white;
+  border-bottom: 1px solid silver;
+}
+input:focus {
+  outline: none !important;
+}

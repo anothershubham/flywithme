@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="card br11">
+    <div class="trip">
+      <div class="" (click)="this.show=1;">
+        <label class="radiolabel">One Way
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+        </label> 
+      </div>
+      <div class="" (click)="this.show=2;">
+        <label class="radiolabel">Two Way
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+    <div class="onerow" *ngIf="show==1">
+      <div class="col-lg-12">
+        <div class="row" style="margin-left: -4px;">
+            <label class="mobileview">
+                <input placeholder=" " class="rm-b form-control">
+                <span>From</span>
+            </label>
+            <img class="arrow_logo" src="assets/icons/multiarrow.svg">
+            <label class="mobileview">
+                <input placeholder=" " class="rm-b form-control">
+                <span>To</span>
+            </label>
+            <label class="mobileview">
+                <input placeholder=" " class="rm-b form-control">
+                <span>From Date</span>
+            </label>
+            <label class="mobileview">
+                <input placeholder=" " class="rm-b form-control">
+                <span>To Date</span>
+            </label>
+            <label class="lastview">
+                <input placeholder=" " class="rm-b form-control">
+                <span>Traveller & class</span>
+            </label>
+          <!-- <input type="text" class="form-control mobileview" >
+          <img class="arrow_logo" src="assets/icons/multiarrow.svg">
+          <input type="text" class="form-control mobileview" >
+          <input type="text" class="form-control mobileview" >
+          <input type="text" class="form-control mobileview ml-10" > -->
+        </div>
+      </div>
+    </div>
+    <div class="" *ngIf="show==2">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+</div>
