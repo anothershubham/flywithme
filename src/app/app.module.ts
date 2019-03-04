@@ -9,11 +9,19 @@ import { DataService } from "./data.service";
 import { AppRoutingModule } from './app.routing.module';
 import { UsersComponent } from "./users/users.component";
 import { FlightsComponent } from './flights/flights.component';
+import { OffersComponent } from "./offers/offers.component";
+import { MybookingComponent } from './mybooking/mybooking.component';
+import { ProfileComponent } from './profile/profile.component';
+import { MywalletComponent } from './mywallet/mywallet.component';
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    FlightsComponent
+    FlightsComponent,
+    OffersComponent,
+    MybookingComponent,
+    ProfileComponent,
+    MywalletComponent
   ],
   imports: [
     BrowserModule,

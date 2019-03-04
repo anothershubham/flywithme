@@ -6,7 +6,7 @@ overflow:hidden;
 } */
 .header li{
 display:inline;
-padding:0px 28px;
+padding:0px 17px;
 }
 div.item {
     vertical-align: top;
@@ -111,7 +111,7 @@ div.item {
 }
 .foot li{
     display:inline;
-    padding:0px 9px;
+    padding:0px 12px;
 }
 .arrow_logo{
   transform: rotate(90deg);
@@ -174,7 +174,7 @@ label {
   position:relative;
   /* display:inline-block; */
 }
-  
+ 
 .onerow span {
   padding:10px;
   pointer-events: none;
@@ -186,14 +186,6 @@ label {
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity:0.5;
 }
-/* span .checkmark{
-  margin-top: 19%!important;
-  margin-left: 36%!important;
-} */
-/* input {
-  padding:10px;
-} */
-
 input:focus + span, input:not(:placeholder-shown) + span {
   opacity:1;
   transform: scale(0.75) translateY(-100%) translateX(-30px);
